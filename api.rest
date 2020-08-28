@@ -5,7 +5,7 @@ POST http://localhost:3000/createUser HTTP/1.1
 content-type: application/json
 
 {
-    "name": "aluno arbyte"
+    "name": "Matheus"
 }
 
 
@@ -14,7 +14,7 @@ PUT http://localhost:3000/updateUser/5f4079b6a5edbf3714769e89 HTTP/1.1
 content-type: application/json
 
 {
-    "name": "tapioca"
+    "name": "Matheus"
 }
 
 
