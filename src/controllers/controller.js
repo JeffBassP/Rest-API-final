@@ -4,7 +4,7 @@ let database;
 let userSchema;
 
 const connectDatabase = async () => {
-    database = database || mongoose.connect('mongodb+srv://usuario:senha@cluster0.go3jm.mongodb.net/development?retryWrites=true&w=majority', {
+    database =  mongoose.connect('mongodb+srv://usuario:usuario@arbyte.obhjq.mongodb.net/development?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useUnifiedTopology: true
     });
@@ -56,7 +56,7 @@ const createUSer = async ({
         name
     });
 
-    user.save();
+   return user.save();
 };
 
 const updateUser = async ({
